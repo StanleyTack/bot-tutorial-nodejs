@@ -21,7 +21,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "wifi";
+  botResponse = "Wifi details";
 
   options = {
     hostname: 'api.groupme.com',
