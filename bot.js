@@ -5,11 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-<<<<<<< HEAD
       botRegex = /^\/wifi$/;
-=======
-      botRegex = /^\/cool guy$/;
->>>>>>> parent of 9fab6f1... change call sign
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -25,8 +21,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = " ";
-  //botResponse = cool();
+  botResponse = "wifi";
 
   options = {
     hostname: 'api.groupme.com',
